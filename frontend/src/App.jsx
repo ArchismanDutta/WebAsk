@@ -27,7 +27,7 @@ function App() {
     setLoading(true);
     setAnswer("");
     try {
-      const response = await axios.post("http://localhost:8000/ask", {
+      const response = await axios.post("https://webask-gepc.onrender.com/ask", {
         question,
         url,
       });
